@@ -9,6 +9,7 @@ For loops are useful when you want to repeat a section of code a set number of t
 Although there are numerous ways that we can use a for loop, but today we will be focusing on repeating a set number of times using a number or integer value.
 
 ### Using a range
+
 We will use a for loop to repeat a task a certain number of times.
 Look at example1.py
 

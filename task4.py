@@ -23,3 +23,19 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+import math
+
+
+month = 1
+newbal = 0
+remaining = 0
+for i in range(12):
+    pur1 = float(input(f'Enter total purchases for month({month}) : '))
+    pay1 = float(input(f'Enter total payments for month({month}) : '))
+    remaining = remaining + pur1 - pay1
+    int1 = (((remaining)*(0.02)))
+    print(f'2% interest has been charged: {int1}')
+    oldbal = remaining + int1
+    #newbal = newbal + oldbal
+    print(f'Your closing balance is ${oldbal}')
+    month = month + 1
