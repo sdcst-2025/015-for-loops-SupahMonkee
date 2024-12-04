@@ -17,3 +17,22 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+
+import os, math
+
+n = 10
+
+while n > 9 or n <= 0:
+    try: 
+        n = int(input('Enter an integer that is smaller than 10: '))
+        if n < 10:
+            break
+        else:
+            os.system('cls')
+            print('Integer must be less than 10 and positive')
+    except:
+        os.system('cls')
+        print('Number must be an integer')
+
+for i in range(n):
+    
