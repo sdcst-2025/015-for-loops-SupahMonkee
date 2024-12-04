@@ -33,9 +33,11 @@ for i in range(12):
     pur1 = float(input(f'Enter total purchases for month({month}) : '))
     pay1 = float(input(f'Enter total payments for month({month}) : '))
     remaining = remaining + pur1 - pay1
-    int1 = (((remaining)*(0.02)))
+    int1 = round(((remaining)*(0.02)), 2)
     print(f'2% interest has been charged: {int1}')
     oldbal = remaining + int1
-    #newbal = newbal + oldbal
     print(f'Your closing balance is ${oldbal}')
+    remaining = oldbal
     month = month + 1
+    
+#done

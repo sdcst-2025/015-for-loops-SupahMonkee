@@ -22,3 +22,5 @@ enter a number:4
 ****
 
 """
+
+l = int(input("Enter length value"))
