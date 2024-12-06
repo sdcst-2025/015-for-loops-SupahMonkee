@@ -21,6 +21,11 @@ the sum of the series is 1234
 import os, math
 
 n = 10
+val = 0
+t1 = 0
+t2 = 0
+t3 = 0
+
 
 while n > 9 or n <= 0:
     try: 
@@ -35,4 +40,12 @@ while n > 9 or n <= 0:
         print('Number must be an integer')
 
 for i in range(n):
-    
+    #t1 = t3
+    t2 = ((10**val))
+    t3 += t2
+    val += 1
+    #add num of digits each loop
+print()
+
+#create another for loop
+#use t3 as a value for the loop
