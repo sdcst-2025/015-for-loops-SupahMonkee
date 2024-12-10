@@ -20,12 +20,8 @@ the sum of the series is 1234
 
 import os, math
 
-n = 10
-val = 0
-t1 = 0
-t2 = 0
-t3 = 0
 
+n = int(input("Enter an integer smaller than 10: "))
 
 while n > 9 or n <= 0:
     try: 
@@ -39,13 +35,14 @@ while n > 9 or n <= 0:
         os.system('cls')
         print('Number must be an integer')
 
-for i in range(n):
-    #t1 = t3
-    t2 = ((10**val))
-    t3 += t2
-    val += 1
-    #add num of digits each loop
-print()
 
-#create another for loop
-#use t3 as a value for the loop
+sum = 0
+term = 0
+    
+for i in range(1, n + 1):
+    term = term * 10 + 1
+    sum += term
+    
+print(f'The sum of the series is {sum}')
+
+#done
